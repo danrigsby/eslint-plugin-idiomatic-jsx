@@ -6,10 +6,10 @@ dependencies:
   pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
   override:
-    - npm run build
+    - yarn run build
 
 deployment:
   npm:
     tag: /v[0-9]+(\.[0-9]+)*/
-      commands:
-        - npm publish
+    commands:
+      - yarn publish
