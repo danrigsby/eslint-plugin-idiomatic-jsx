@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import shouldCheckComponent from './shouldCheckComponent';
+import shouldCheckComponent from '../shouldCheckComponent';
 
 describe('shouldCheckComponent', () => {
   it('should return false when no values', () => {

@@ -3,8 +3,7 @@ import { elementType } from 'jsx-ast-utils';
 export default {
   create: (context) => ({
     JSXOpeningElement: (node) => {
-      const options = context.options[0] || {};
-      const components = options.components || [];
+      const components = context.options[0] || [];
       const nodeType = elementType(node);
 
       // Only check specified components

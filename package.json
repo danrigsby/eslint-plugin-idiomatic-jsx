@@ -16,8 +16,8 @@
     "jsx"
   ],
   "scripts": {
-    "start": "npm run lint:fix && rimraf lib && babel src --out-dir lib --copy-files",
-    "build": "npm run lint && rimraf lib && babel src --out-dir lib --copy-files",
+    "start": "npm run lint:fix && rimraf lib && babel src --out-dir lib --copy-files --ignore __test__",
+    "build": "npm run lint && rimraf lib && babel src --out-dir lib --copy-files --ignore __test__",
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint src",
     "test": "mocha \"src/**/*.test.js\" --compilers js:babel-core/register",

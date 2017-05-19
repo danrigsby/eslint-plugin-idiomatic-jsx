@@ -5,6 +5,7 @@ machine:
 dependencies:
   pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+		- yarn
   override:
     - yarn run build
 
