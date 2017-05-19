@@ -16,7 +16,8 @@
     "start": "npm run lint:fix && rimraf lib && babel src --out-dir lib --copy-files",
     "build": "npm run lint && rimraf lib && babel src --out-dir lib --copy-files",
     "lint:fix": "npm run lint -- --fix",
-    "lint": "eslint src"
+    "lint": "eslint src",
+		"test": "echo no tests"
   },
   "dependencies": {
     "jsx-ast-utils": "^1.4.1"

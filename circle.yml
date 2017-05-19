@@ -3,8 +3,5 @@ machine:
     version: 7
 
 dependencies:
-  pre:
-    - npm update
-
   override:
     - npm run build
