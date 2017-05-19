@@ -1,4 +1,5 @@
 import { getProp, elementType } from 'jsx-ast-utils';
+import shouldCheckComponent from '../shouldCheckComponent';
 
 export default {
   create: (context) => ({
@@ -7,10 +8,7 @@ export default {
       const options = context.options[0] || {};
 
       Object.keys(options).forEach((attribute) => {
-        const components = options[attribute] || [];
-
-        // Only check specified elements
-        if (components.indexOf(nodeType) >= 0) {
+        if (shouldCheckComponent(options[attribute], nodeType)) {
           // if prop exists, report error
           if (getProp(node.attributes, attribute)) {
             context.report({
