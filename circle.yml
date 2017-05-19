@@ -3,7 +3,7 @@ machine:
     version: 7
 
 dependencies:
-	pre:
+  pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
   override:
     - npm run build
