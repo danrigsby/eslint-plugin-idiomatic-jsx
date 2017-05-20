@@ -13,10 +13,10 @@ export default {
           const propValue = getPropValue(prop);
 
           // If prop doesnt exist or has no value, then report error
-          if (!prop || propValue.value === null || propValue.value === undefined) {
+          if (!prop || !propValue) {
             context.report({
               node,
-              message: `<${nodeType}> components must have a valid "${attribute}" property.`
+              message: `<${nodeType}> components must have a valid "${attribute}" attribute.`
             });
           }
         }

@@ -13,7 +13,7 @@ export default {
           if (getProp(node.attributes, attribute)) {
             context.report({
               node,
-              message: `<${nodeType}> components must not have a "${attribute}" property.`
+              message: `<${nodeType}> components must not have a "${attribute}" attribute.`
             });
           }
         }
