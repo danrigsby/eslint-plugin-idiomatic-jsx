@@ -1,4 +1,4 @@
-# eslint-plugin-idiomatic-jsx [![CircleCI](https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx.svg?style=svg)](https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx)
+# eslint-plugin-idiomatic-jsx [![CircleCI](https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx.svg?style=svg)](https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx) [![Coverage Status](https://coveralls.io/repos/github/danrigsby/eslint-plugin-idiomatic-jsx/badge.svg?branch=master)](https://coveralls.io/github/danrigsby/eslint-plugin-idiomatic-jsx?branch=master)
 ESLint jsx plugin to bring more idiomatic control over JSX elements.
 
 These rules allow you to create idiomatic styling over JSX in your projects.  For instance, enforcing or preventing certain attributes on JSX elements.  The goal is to extend the rule sets provided by [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) to give you more control over how JSX is used.
