@@ -3,7 +3,7 @@ ESLint jsx plugin to bring more idiomatic control over JSX elements.
 
 These rules allow you to create idiomatic styling over JSX in your projects.  For instance, enforcing or preventing certain attributes on JSX elements.  The goal is to extend the rule sets provided by [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) to give you more control over how JSX is used.
 
-*Some Possible Use Cases*
+**Some Possible Use Cases**
 - Require `id` tags on components like `a` and `input` for easier automated tests
 - Prevent `onClick` being used on `div` or `span` components
 - Prevent use of `button` components in favor of a custom `Button` components
@@ -60,4 +60,4 @@ Configure the rules you want to use under the rules section.
 
 ## License
 
-eslint-plugin-idiomatic-jsx is licensed under the [MIT License](LICENSE.md).
+`eslint-plugin-idiomatic-jsx` is licensed under the [MIT License](LICENSE).
