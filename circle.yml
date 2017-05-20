@@ -7,7 +7,13 @@ dependencies:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - yarn
   override:
+    - yarn run lint
     - yarn run build
+
+test:
+  override:
+    - yarn test -- --reporter mocha-circleci-reporter
+    - if [[ -e test-results.xml ]]; then cp test-results.xml $CIRCLE_TEST_REPORTS/test-results.xml; fi
 
 deployment:
   npm:

@@ -16,8 +16,8 @@
     "jsx"
   ],
   "scripts": {
-    "start": "npm run lint:fix && rimraf lib && babel src --out-dir lib --copy-files --ignore __test__",
-    "build": "npm run lint && rimraf lib && babel src --out-dir lib --copy-files --ignore __test__",
+    "start": "npm run lint:fix && npm run build",
+    "build": "rimraf lib && babel src --out-dir lib --copy-files --ignore __test__",
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint src",
     "test": "mocha \"src/**/*.test.js\" --compilers js:babel-core/register",
@@ -38,6 +38,8 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
     "mocha": "^3.4.1",
+    "mocha-circleci-reporter": "^0.0.2",
+    "reporter": "^0.1.0",
     "rimraf": "^2.6.1"
   }
 }
