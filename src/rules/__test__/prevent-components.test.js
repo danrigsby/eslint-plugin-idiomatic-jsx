@@ -17,6 +17,13 @@ new RuleTester().run('prevent-components', rule, {
         '<input> components are not allowed.',
         '<button> components are not allowed.'
       ]
+    },
+    {
+      code: '<input />',
+      options: [['input'], (n) => `${n}`],
+      errors: [
+        'input'
+      ]
     }
   ].map(parserOptionsMapper)
 });

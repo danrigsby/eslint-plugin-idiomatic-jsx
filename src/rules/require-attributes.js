@@ -6,6 +6,8 @@ export default {
     JSXOpeningElement: (node) => {
       const nodeType = elementType(node);
       const options = context.options[0] || {};
+      const messageBuilder = context.options[1] ||
+        ((n, a) => `<${n}> components must have a valid "${a}" attribute.`);
 
       Object.keys(options).forEach((attribute) => {
         if (shouldCheckComponent(options[attribute], nodeType)) {
@@ -16,7 +18,7 @@ export default {
           if (!prop || !propValue) {
             context.report({
               node,
-              message: `<${nodeType}> components must have a valid "${attribute}" attribute.`
+              message: messageBuilder(nodeType, attribute)
             });
           }
         }

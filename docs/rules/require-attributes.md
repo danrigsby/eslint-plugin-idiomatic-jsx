@@ -62,3 +62,15 @@ By default, the attributes are required on any item in the defined array.  This 
 <a></a>                             <!-- Bad: id is missing-->
 <button></button>                   <!-- Bad: id is missing-->
 ```
+
+You may also pass in a 3rd option to change the default message that is output on error.  This can be handy if you want to explain "why" this rule is being used in your project or organization.  This option is a `function` that takes in the `nodeType` and `attribute` name and returns a `string`.
+
+```
+{
+  "rules": {
+    "idiomatic-jsx/require-attributes": [ 2, [ "Foo", "Bar" ],
+      (nodeType, attribute) => `<${nodeType}> components must contain a "${attribute}" so they can be discovered by automated tests`
+    }]
+  }
+}
+```

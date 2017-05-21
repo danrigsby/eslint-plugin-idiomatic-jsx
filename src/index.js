@@ -1,3 +1,4 @@
+/* eslint global-require: 0 */
 export default {
   rules: {
     'require-attributes': require('./rules/require-attributes'),

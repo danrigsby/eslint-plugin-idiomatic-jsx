@@ -28,3 +28,15 @@ This rule takes one array argument of type object that defines the list of compo
 <input></input>           <!-- Bad: component is prevented -->
 <button></button>         <!-- Bad: component is prevented -->
 ```
+
+You may also pass in a 3rd option to change the default message that is output on error.  This can be handy if you want to explain "why" this rule is being used in your project or organization.  This option is a `function` that takes in the `nodeType` and returns a `string`.
+
+```
+{
+  "rules": {
+    "idiomatic-jsx/require-attributes": [ 2, [ "Foo", "Bar" ],
+      (nodeType, attribute) => `<${nodeType}> components are not allowed.  Use our custom component instead.`
+    }]
+  }
+}
+```

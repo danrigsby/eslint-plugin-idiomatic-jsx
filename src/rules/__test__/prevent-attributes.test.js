@@ -60,6 +60,13 @@ new RuleTester().run('prevent-attributes', rule, {
       errors: [
         '<div> components must not have a "onClick" attribute.'
       ]
+    },
+    {
+      code: '<div onClick={myFunction}></div>',
+      options: [...blackListOptions, (n, a) => `${n} ${a}`],
+      errors: [
+        'div onClick'
+      ]
     }
   ].map(parserOptionsMapper)
 });

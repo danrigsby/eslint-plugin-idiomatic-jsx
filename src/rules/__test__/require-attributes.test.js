@@ -74,6 +74,13 @@ new RuleTester().run('require-attributes', rule, {
       errors: [
         '<a> components must have a valid "id" attribute.'
       ]
+    },
+    {
+      code: '<a id=""></a>',
+      options: [...blackListOptions, (n, a) => `${n} ${a}`],
+      errors: [
+        'a id'
+      ]
     }
   ].map(parserOptionsMapper)
 });

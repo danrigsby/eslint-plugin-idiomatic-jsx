@@ -5,6 +5,8 @@ export default {
     JSXOpeningElement: (node) => {
       const components = context.options[0] || [];
       const nodeType = elementType(node);
+      const messageBuilder = context.options[1] ||
+        ((n) => `<${n}> components are not allowed.`);
 
       // Only check specified components
       if (components.indexOf(nodeType) === -1) {
@@ -13,7 +15,7 @@ export default {
 
       context.report({
         node,
-        message: `<${nodeType}> components are not allowed.`
+        message: messageBuilder(nodeType)
       });
     }
   })
