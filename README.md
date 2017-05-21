@@ -7,10 +7,10 @@
     <img src="https://img.shields.io/npm/v/eslint-plugin-jsx-a11y.svg" alt="npm version" />
   </a>
   <a href="https://github.com/danrigsby/eslint-plugin-idiomatic-jsx/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l//eslint-plugin-idiomatic-jsx.svg" alt="license" />
+    <img src="https://img.shields.io/npm/l/eslint-plugin-idiomatic-jsx.svg" alt="license" />
   </a>
   <a href='https://coveralls.io/github/danrigsby/eslint-plugin-idiomatic-jsx?branch=master'>
-    <img src='https://coveralls.io/repos/github/danrigsby//eslint-plugin-idiomatic-jsx/badge.svg?branch=master' alt='Coverage Status' />
+    <img src='https://coveralls.io/repos/github/danrigsby/eslint-plugin-idiomatic-jsx/badge.svg?branch=master' alt='Coverage Status' />
   </a>
 </p>
 ESLint jsx plugin to bring more idiomatic control over JSX elements.
