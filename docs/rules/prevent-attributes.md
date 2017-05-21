@@ -70,7 +70,7 @@ By default, the attributes are prevents on any item in the defined array.  This 
 <div onBlur={onBlur}></div>         <!-- Bad: onBlur is on div -->
 <span onClick={onclick}></span>     <!-- Bad: onClick is on span -->
 <span onBlur={onBlur}></span>       <!-- Bad: onBlur is on span -->
-<Foo onClick={onclick}></Foo>     <!-- Bad: onClick is on Foo -->
+<Foo onClick={onclick}></Foo>       <!-- Bad: onClick is on Foo -->
 ```
 
 You may also pass in a 3rd option to change the default message that is output on error.  This can be handy if you want to explain "why" this rule is being used in your project or organization.  This option is a `function` that takes in the `nodeType` and `attribute` name and returns a `string`.
