@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-idiomatic-jsx",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Eslint jsx plugin to bring more idiomatic control over jsx",
   "main": "lib/index.js",
   "files": [
