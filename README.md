@@ -74,5 +74,4 @@ Configure the rules you want to use under the rules section.
 - [require-attributes](docs/rules/require-attributes.md): Require specified `attributes` on specified `components` to be defined.
 
 ## License
-
 `eslint-plugin-idiomatic-jsx` is licensed under the [MIT License](LICENSE).
