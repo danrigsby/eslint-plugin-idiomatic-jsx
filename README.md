@@ -13,6 +13,7 @@
     <img src='https://coveralls.io/repos/github/danrigsby/eslint-plugin-idiomatic-jsx/badge.svg?branch=master' alt='Coverage Status' />
   </a>
 </p>
+
 ESLint jsx plugin to bring more idiomatic control over JSX elements.
 
 These rules allow you to create idiomatic styling over JSX in your projects.  For instance, enforcing or preventing certain attributes on JSX elements.  The goal is to extend the rule sets provided by [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) to give you more control over how JSX is used.

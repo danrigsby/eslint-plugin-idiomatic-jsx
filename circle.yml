@@ -1,18 +1,18 @@
 machine:
   node:
-    version: 7
+    version: 8
 
 dependencies:
   pre:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-    - yarn
+    - npm install
   override:
-    - yarn run lint
-    - yarn run build
+    - npm run lint
+    - npm run build
 
 test:
   override:
-    - yarn test -- --reporter mocha-circleci-reporter
+    - npm test -- --reporter mocha-circleci-reporter
     - if [[ -e test-results.xml ]]; then cp test-results.xml $CIRCLE_TEST_REPORTS/test-results.xml; fi
 
 deployment:
