@@ -3,8 +3,8 @@
   <a href="https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx">
     <img src="https://circleci.com/gh/danrigsby/eslint-plugin-idiomatic-jsx.svg?style=svg" alt="build status" />
   </a>
-  <a href="https://npmjs.org/package/eslint-plugin-jsx-a11y">
-    <img src="https://img.shields.io/npm/v/eslint-plugin-jsx-a11y.svg" alt="npm version" />
+  <a href="https://npmjs.org/package/eslint-plugin-idiomatic-jsx">
+    <img src="https://img.shields.io/npm/v/eslint-plugin-idiomatic-jsx.svg" alt="npm version" />
   </a>
   <a href="https://github.com/danrigsby/eslint-plugin-idiomatic-jsx/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/eslint-plugin-idiomatic-jsx.svg" alt="license" />
